@@ -36,7 +36,7 @@ jobs:
             ${{ runner.os }}-test-${{ env.cache-name }}-
             ${{ runner.os }}-test-
             ${{ runner.os }}-
-      - uses: julia-actions/julia-buildpkg@v1
+      # - uses: julia-actions/julia-buildpkg@v1
       - uses: IanButterworth/julia-runtest@patch-2
         with:
           prefix: ${{ matrix.prefix }}
