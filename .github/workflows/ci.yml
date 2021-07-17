@@ -15,9 +15,7 @@ jobs:
           - xvfb-run -a -s '-screen 0 1024x768x24'
           - xvfb-run
         version:
-          - '1.0'
           - '1' # automatically expands to the latest stable 1.x release of Julia
-          - nightly
         os:
           - ubuntu-latest
         arch:
