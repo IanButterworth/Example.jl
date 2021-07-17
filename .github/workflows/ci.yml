@@ -48,7 +48,6 @@ jobs:
             ${{ runner.os }}-test-
             ${{ runner.os }}-
       - uses: julia-actions/julia-buildpkg@v1
-      - run: sudo apt-get install xvfb
       - uses: IanButterworth/julia-runtest@patch-2
         with:
           prefix: xvfb-run -a -s '-screen 0 1024x768x24'
